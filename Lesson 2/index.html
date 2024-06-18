@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <meta property="og:title" content="My Page Title" />
+    <meta property="og:description" content="My Page Description" />
+    <meta property="og:image" content="https://example.com/image.jpg" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:type" content="website" />
+    <meta name="keywords" content="HTML CSS JavaScript" />
+    <meta name="description" content="This is the description" />
+    <meta name="author" content="Your Name" />
+
+
+    <!-- Here we used internal css -->
+    <style>
+      .title {
+        color: blue;
+      }
+      h1 {
+        color: blue;
+      }
+    </style>
+
+    <!-- Here we used external css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      This is HTML5 semantic header, here you should write header related html
+      code
+    </header>
+    <aside>
+      This is HTML5 semantic aside, here you should write aside related html
+      code
+    </aside>
+    <main>
+      <!-- This is HTML5 semantic main, here you should write main related html code -->
+      <section>
+        <h1 class="title" id="title" style="color: red">Hello World</h1>
+        <!-- Here we used inline css -->
+        <p>This is a paragraph</p>
+        <a href="https://google.com" target="_blank">This is Google Link</a>
+        <button type="button">this is button</button>
+        <img
+          src="https://picsum.photos/id/237/200/300"
+          alt="random"
+          width="200"
+          height="300"
+        />
+      </section>
+      <section>
+        <h2>Lists</h2>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+        <ol>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ol>
+        <dl>
+          <dt>Item 1</dt>
+          <dd>Item 1 description</dd>
+          <dt>Item 2</dt>
+          <dd>Item 2 description</dd>
+          <dt>Item 3</dt>
+          <dd>Item 3 description</dd>
+        </dl>
+      </section>
+      <section>
+        <h2>Tables</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="2">John</td>
+              <td>25</td>
+              <td>New York</td>
+            </tr>
+            <tr>
+              <td>30</td>
+              <td>London</td>
+            </tr>
+            <tr>
+              <td colspan="3">Jane</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Total</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+      <section>
+        <h2>Forms</h2>
+        <form>
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
+          </div>
+          <br />
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <br />
+          <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" />
+          </div>
+          <br />
+          <div>
+            <label for="age">Age:</label>
+
+            <input type="number" id="age" name="age" />
+          </div>
+          <br />
+          <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" />
+          </div>
+          <br />
+          <div>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <br />
+          <div>
+            <label for="Positions">Positions</label>
+            <input
+              type="checkbox"
+              id="junior"
+              name="junior"
+              value="junior"
+              checked
+            />
+            <label for="junior">Junior</label>
+            <input type="checkbox" id="middle" name="middle" value="middle" />
+            <label for="middle">Middle</label>
+            <input type="checkbox" id="senior" name="senior" value="senior" />
+            <label for="senior">Senior</label>
+          </div>
+          <br />
+          <div>
+            <label for="topic">Topics</label>
+            <input type="radio" id="html" name="topic" value="HTML" checked />
+            <label for="html">HTML</label>
+            <input type="radio" id="css" name="topic" value="CSS" />
+            <label for="css">CSS</label>
+            <input type="radio" id="js" name="topic" value="JavaScript" />
+            <label for="js">JavaScript</label>
+          </div>
+          <br />
+          <div>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address"></textarea>
+          </div>
+          <br />
+          <div>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" />
+          </div>
+          <br />
+          <div>
+            <label for="url">URL:</label>
+            <input type="url" id="url" name="url" />
+          </div>
+          <br />
+          <div>
+            <label for="range">Range:</label>
+            <input type="range" id="range" name="range" />
+          </div>
+          <br />
+          <div>
+            <label for="color">Color:</label>
+            <input type="color" id="color" name="color" />
+          </div>
+          <br />
+          <div>
+            <label for="file">File:</label>
+            <input
+              type="file"
+              id="file"
+              name="file"
+              multiple
+              accept="image/*"
+            />
+          </div>
+          <br />
+          <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" cols="30"></textarea>
+          </div>
+          <br />
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      This is HTML5 semantic footer, here you should write footer related html
+      code
+    </footer>
+  </body>
+</html>
